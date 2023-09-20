@@ -1,0 +1,322 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+
+/* HEADER */
+header {
+    padding: 6px;
+    height: 60px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.header-container .links a {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 24px;
+    padding-right: 1rem;
+    font-family: arial,sans-serif;
+}
+.header-container .links a:hover {
+    text-decoration: underline;
+}
+.extras {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+#apps {
+    padding: 8px;
+    display: inline;
+    height: 40px;
+    width: 40px;
+}
+#apps div #apps-link {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apps-link svg {
+    color: #5f6368;
+    opacity: 1;
+    fill: currentColor;
+    width: 24px; /* adjust as needed */
+    height: 24px; /* adjust as needed */
+}
+a.login-btn {
+    color: #fff;
+    text-decoration: none;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-right: 8px;
+    padding: 9px 15px;
+    min-width: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #1a73e8;
+    cursor:pointer
+}
+
+/* LOGO */
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+#img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 645px);
+    min-height: 92px;
+}
+.rel-pos {
+    max-height: 92px;
+    height: 100%;
+    margin-top: auto;
+    position: relative;
+}
+#logo {
+    /* large screen
+    width: 272px;
+    height: 92px; */
+    /* small screen
+    width: 160px;
+    height: 56px; */
+
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+#imagenes {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: absolute;
+    left: 215px;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+/* FORM INPUT */
+#form-container {
+    padding: 20px;
+    max-height: 160px;
+}   
+form {
+    display: block;
+    margin-top: 0em;
+}
+form div {
+    display: block;
+}
+
+.form-in {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    width: auto;
+    max-width: 584px;
+    position: relative;
+}
+
+.search-btns {
+    padding-top: 18px;
+}
+
+.search-btns input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 6px 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.search-btns input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.search-bar {
+    display: flex;
+    z-index: 3;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+}
+.search-bar:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.search-bar > div {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+    flex-grow: 1;
+}
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    height: 46px;
+}
+.search-icon > div {
+    margin: auto;
+}
+.search-icon > div > span {
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+}
+.search-icon > div > span > svg {
+    margin-top: 3px;
+    color: #9aa0a6;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.extra-icons {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+    height: 44px;
+}
+.extra-icons > div {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+
+
+.text-in {
+    flex-grow: 1;
+}
+.text-in > input {
+    height: 80%;
+    width: 100%;
+    line-height: 22px;
+    margin-bottom: 8px;
+    overflow-x: hidden;
+    font-size: 16px;
+    /* border: 2px solid black!important; */
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+    flex: 100%;
+}
+
+.fg-1 {
+    flex-grow: 1;
+}
+
+footer {
+    font-family: arial,sans-serif;
+    display: block;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+footer .country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.country p {
+    margin: 0;
+}
+footer .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.footer-info .left, .footer-info .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1200px) {
+    .footer-info .left, .footer-info .right {
+        justify-content: space-evenly;
+    }
+}
+
+footer .footer-info a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+footer .footer-info > div a:hover {
+    text-decoration: underline;
+    color: #202124;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer .footer-info {
+        justify-content: space-evenly;
+    }
+}
